@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC76DF2C-8B58-4A1A-83D7-724C2CA327DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_4___EcrivainsDeconnecteCode</RootNamespace>
+    <AssemblyName>4 - EcrivainsDeconnecteCode</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AffichageCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffichageCommande.Designer.cs">
+      <DependentUpon>AffichageCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageDeCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffichageDeCommande.Designer.cs">
+      <DependentUpon>AffichageDeCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageDeLivreur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffichageDeLivreur.Designer.cs">
+      <DependentUpon>AffichageDeLivreur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AfichageDeProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfichageDeProduit.Designer.cs">
+      <DependentUpon>AfichageDeProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterBon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterBon.Designer.cs">
+      <DependentUpon>AjouterBon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterCommande.Designer.cs">
+      <DependentUpon>AjouterCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_EntrepriseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gestion_EntrepriseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimerBon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimerBon.Designer.cs">
+      <DependentUpon>ImprimerBon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierCommand.Designer.cs">
+      <DependentUpon>ModifierCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AffichageCommande.resx">
+      <DependentUpon>AffichageCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffichageDeCommande.resx">
+      <DependentUpon>AffichageDeCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffichageDeLivreur.resx">
+      <DependentUpon>AffichageDeLivreur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AfichageDeProduit.resx">
+      <DependentUpon>AfichageDeProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterBon.resx">
+      <DependentUpon>AjouterBon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterCommande.resx">
+      <DependentUpon>AjouterCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimerBon.resx">
+      <DependentUpon>ImprimerBon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierCommand.resx">
+      <DependentUpon>ModifierCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_EntrepriseDataSet.xsc">
+      <DependentUpon>Gestion_EntrepriseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_EntrepriseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gestion_EntrepriseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_EntrepriseDataSet.xss">
+      <DependentUpon>Gestion_EntrepriseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-box-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-box-12.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

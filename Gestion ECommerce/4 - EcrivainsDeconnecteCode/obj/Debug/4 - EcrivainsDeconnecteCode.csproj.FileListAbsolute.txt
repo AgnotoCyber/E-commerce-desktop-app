@@ -1,0 +1,60 @@
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.pdb
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csprojResolveAssemblyReference.cache
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.Form1.resources
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.Properties.Resources.resources
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csproj.GenerateResource.Cache
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.exe
+S:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.pdb
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.exe
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.pdb
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.pdb
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csprojResolveAssemblyReference.cache
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.Properties.Resources.resources
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csproj.GenerateResource.Cache
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe.config
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\bin\Debug\Bunifu_UI_v1.5.3.dll
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AjouterCommande.resources
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageCommande.resources
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageDeCommande.resources
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageDeLivreur.resources
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.LogIn.resources
+G:\rahmouni\TDI202\ClientServeur\4 - EcrivainsDeconnecteCode\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.ModifierCommand.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe.config
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.exe
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.pdb
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.pdb
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csprojResolveAssemblyReference.cache
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageCommande.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageDeCommande.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageDeLivreur.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AfichageDeProduit.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AjouterBon.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AjouterCommande.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\Project_ISTA.DashBoard.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.ImprimerBon.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.LogIn.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.ModifierCommand.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.Properties.Resources.resources
+C:\Users\walid\Desktop\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe.config
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.exe
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.pdb
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.exe
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\4 - EcrivainsDeconnecteCode.pdb
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageCommande.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageDeCommande.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AffichageDeLivreur.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AfichageDeProduit.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AjouterBon.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.AjouterCommande.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.DashBoard.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.ImprimerBon.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.LogIn.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.ModifierCommand.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\_4___EcrivainsDeconnecteCode.Properties.Resources.resources
+C:\Users\Administrator\Downloads\Gestion ECommerce\Gestion ECommerce\4 - EcrivainsDeconnecteCode\obj\Debug\4 - EcrivainsDeconnecteCode.csproj.GenerateResource.Cache

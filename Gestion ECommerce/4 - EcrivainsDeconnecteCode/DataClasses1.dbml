@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Gestion_Entreprise" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KAJERO-PC\SQLEXPRESS;Initial Catalog=Gestion_Entreprise;Integrated Security=True" SettingsObjectName="_4___EcrivainsDeconnecteCode.Properties.Settings" SettingsPropertyName="Gestion_EntrepriseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.adminstrateur" Member="adminstrateurs">
+    <Type Name="adminstrateur">
+      <Column Name="idadmin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nomAdmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="prenomAdmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idlogpassAdmin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="adminstrateur_LigneCommandAdmin" Member="LigneCommandAdmins" ThisKey="idadmin" OtherKey="idadmin" Type="LigneCommandAdmin" />
+      <Association Name="adminstrateur_LigneCommandAdmin1" Member="LigneCommandAdmin1s" ThisKey="idadmin" OtherKey="idadmin" Type="LigneCommandAdmin1" />
+      <Association Name="logpassadmin_adminstrateur" Member="logpassadmin" ThisKey="idlogpassAdmin" OtherKey="idlogpassAdmin" Type="logpassadmin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BonLivraison" Member="BonLivraisons">
+    <Type Name="BonLivraison">
+      <Column Name="id_bon_livraison" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date_bon_livraison" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Nom_bon_livraison" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre_colis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCommande" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Commande_BonLivraison" Member="Commande" ThisKey="idCommande" OtherKey="idCommande" Type="Commande" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Client" Member="Clients">
+    <Type Name="Client">
+      <Column Name="idClient" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomComplet" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AdresseClient" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TelephoneClient" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idville" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Client_Commande" Member="Commandes" ThisKey="idClient" OtherKey="idClient" Type="Commande" />
+      <Association Name="Ville_Client" Member="Ville" ThisKey="idville" OtherKey="idVille" Type="Ville" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Commande" Member="Commandes">
+    <Type Name="Commande">
+      <Column Name="idCommande" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DateCommande" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StatutCommande" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Commentaire" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="idClient" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idVille" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idProduit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTransport" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="Commande_BonLivraison" Member="BonLivraisons" ThisKey="idCommande" OtherKey="idCommande" Type="BonLivraison" />
+      <Association Name="Commande_LignCommandeEmploye" Member="LignCommandeEmployes" ThisKey="idCommande" OtherKey="idCommande" Type="LignCommandeEmploye" />
+      <Association Name="Commande_LigneCommandAdmin" Member="LigneCommandAdmins" ThisKey="idCommande" OtherKey="idCommande" Type="LigneCommandAdmin" />
+      <Association Name="Commande_LigneCommandAdmin1" Member="LigneCommandAdmin1s" ThisKey="idCommande" OtherKey="idCommande" Type="LigneCommandAdmin1" />
+      <Association Name="Client_Commande" Member="Client" ThisKey="idClient" OtherKey="idClient" Type="Client" IsForeignKey="true" />
+      <Association Name="Produit_Commande" Member="Produit" ThisKey="idProduit" OtherKey="idProduit" Type="Produit" IsForeignKey="true" />
+      <Association Name="Transport_Commande" Member="Transport" ThisKey="idTransport" OtherKey="idTransport" Type="Transport" IsForeignKey="true" />
+      <Association Name="Ville_Commande" Member="Ville" ThisKey="idVille" OtherKey="idVille" Type="Ville" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Depot" Member="Depots">
+    <Type Name="Depot">
+      <Column Name="idDep" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idLivreur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idProduit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Livreur_Depot" Member="Livreur" ThisKey="idLivreur" OtherKey="idLivreur" Type="Livreur" IsForeignKey="true" />
+      <Association Name="Produit_Depot" Member="Produit" ThisKey="idProduit" OtherKey="idProduit" Type="Produit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employe" Member="Employes">
+    <Type Name="Employe">
+      <Column Name="idEmploye" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomEmploye" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PrenomEmploye" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telephone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="photo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salaire" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="dateNaissance" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dateRecretement" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ville" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idlogpass" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hint" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Employe_LignCommandeEmploye" Member="LignCommandeEmployes" ThisKey="idEmploye" OtherKey="idEmploye" Type="LignCommandeEmploye" />
+      <Association Name="logpass_Employe" Member="logpass" ThisKey="idlogpass" OtherKey="idlogpass" Type="logpass" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LignCommandeEmploye" Member="LignCommandeEmployes">
+    <Type Name="LignCommandeEmploye">
+      <Column Name="idEmploye" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCommande" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Commande_LignCommandeEmploye" Member="Commande" ThisKey="idCommande" OtherKey="idCommande" Type="Commande" IsForeignKey="true" />
+      <Association Name="Employe_LignCommandeEmploye" Member="Employe" ThisKey="idEmploye" OtherKey="idEmploye" Type="Employe" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LigneCommandAdmin" Member="LigneCommandAdmins">
+    <Type Name="LigneCommandAdmin">
+      <Column Name="idadmin" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCommande" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="adminstrateur_LigneCommandAdmin" Member="adminstrateur" ThisKey="idadmin" OtherKey="idadmin" Type="adminstrateur" IsForeignKey="true" />
+      <Association Name="Commande_LigneCommandAdmin" Member="Commande" ThisKey="idCommande" OtherKey="idCommande" Type="Commande" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Livreur" Member="Livreurs">
+    <Type Name="Livreur">
+      <Column Name="idLivreur" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomComplet" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CIN" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="AdresseLivreur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telephoneLivreur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="photoLivreur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dateNaissance" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dateRecretement" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="idVille" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idlogpass" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Livreur_Depot" Member="Depots" ThisKey="idLivreur" OtherKey="idLivreur" Type="Depot" />
+      <Association Name="Livreur_Transport" Member="Transports" ThisKey="idLivreur" OtherKey="idLivreur" Type="Transport" />
+      <Association Name="logpass_Livreur" Member="logpass" ThisKey="idlogpass" OtherKey="idlogpass" Type="logpass" IsForeignKey="true" />
+      <Association Name="Ville_Livreur" Member="Ville" ThisKey="idVille" OtherKey="idVille" Type="Ville" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LigneCommandAdmin" Member="LigneCommandAdmin1s">
+    <Type Name="LigneCommandAdmin1">
+      <Column Name="idadmin" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCommande" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="adminstrateur_LigneCommandAdmin1" Member="adminstrateur" ThisKey="idadmin" OtherKey="idadmin" Type="adminstrateur" IsForeignKey="true" />
+      <Association Name="Commande_LigneCommandAdmin1" Member="Commande" ThisKey="idCommande" OtherKey="idCommande" Type="Commande" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.logpass" Member="logpasses">
+    <Type Name="logpass">
+      <Column Name="idlogpass" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pasword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="logpass_Employe" Member="Employes" ThisKey="idlogpass" OtherKey="idlogpass" Type="Employe" />
+      <Association Name="logpass_Livreur" Member="Livreurs" ThisKey="idlogpass" OtherKey="idlogpass" Type="Livreur" />
+    </Type>
+  </Table>
+  <Table Name="dbo.logpassadmin" Member="logpassadmins">
+    <Type Name="logpassadmin">
+      <Column Name="idlogpassAdmin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logwordAdmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="paswordAdmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="logpassadmin_adminstrateur" Member="adminstrateurs" ThisKey="idlogpassAdmin" OtherKey="idlogpassAdmin" Type="adminstrateur" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Produit" Member="Produits">
+    <Type Name="Produit">
+      <Column Name="idProduit" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="imageProduit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="prixReel" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ProduitStatue" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Quantite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Produit_Commande" Member="Commandes" ThisKey="idProduit" OtherKey="idProduit" Type="Commande" />
+      <Association Name="Produit_Depot" Member="Depots" ThisKey="idProduit" OtherKey="idProduit" Type="Depot" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SocietéLivraison" Member="SocietéLivraisons">
+    <Type Name="SocietéLivraison">
+      <Column Name="idSocietéLivraison" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomSocieté" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tarif" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="SocietéLivraison_Transport" Member="Transports" ThisKey="idSocietéLivraison" OtherKey="idSocietéLivraison" Type="Transport" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transport" Member="Transports">
+    <Type Name="Transport">
+      <Column Name="idTransport" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idSocietéLivraison" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idLivreur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Transport_Commande" Member="Commandes" ThisKey="idTransport" OtherKey="idTransport" Type="Commande" />
+      <Association Name="SocietéLivraison_Transport" Member="SocietéLivraison" ThisKey="idSocietéLivraison" OtherKey="idSocietéLivraison" Type="SocietéLivraison" IsForeignKey="true" />
+      <Association Name="Livreur_Transport" Member="Livreur" ThisKey="idLivreur" OtherKey="idLivreur" Type="Livreur" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ville" Member="Villes">
+    <Type Name="Ville">
+      <Column Name="idVille" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomVille" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Ville_Client" Member="Clients" ThisKey="idVille" OtherKey="idville" Type="Client" />
+      <Association Name="Ville_Commande" Member="Commandes" ThisKey="idVille" OtherKey="idVille" Type="Commande" />
+      <Association Name="Ville_Livreur" Member="Livreurs" ThisKey="idVille" OtherKey="idVille" Type="Livreur" />
+    </Type>
+  </Table>
+</Database>
